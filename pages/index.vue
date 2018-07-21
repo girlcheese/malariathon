@@ -1,31 +1,19 @@
-<template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        malariathon
-      </h1>
-      <h2 class="subtitle">
-        Front end for the Nando's Malariathon 2018
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
+<template lang="pug">
+  section.w-100.pv3.f6.ph3.ph4-ns
+    .mw9.center.ph3-ns
+      .cf.ph2-ns
+        .fl.w-100.w-third-ns.pa2
+          .outline.bg-white.pv4
+        .fl.w-100.w-third-ns.pa2
+          .outline.bg-white.pv4
+        .fl.w-100.w-third-ns.pa2
+          .outline.bg-white.pv4
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
-
 export default {
+  layout: 'malariathon',
   components: {
     AppLogo
   }
@@ -62,4 +50,3 @@ export default {
   padding-top: 15px;
 }
 </style>
-

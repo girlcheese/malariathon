@@ -1,3 +1,7 @@
+const PurgecssPlugin = require('purgecss-webpack-plugin')
+const glob = require('glob-all')
+const path = require('path')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -21,7 +25,7 @@ module.exports = {
   ** Modules
   */
   modules: [
-    '@nuxtjs/pwa',
+    '@nuxtjs/pwa'
   ],
   /*
   ** Build configuration
@@ -39,7 +43,25 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+      if (!isDev) {
+        config.plugins.push(
+          new PurgecssPlugin({
+            paths: glob.sync([
+              path.join(__dirname, './pages/**/*.vue'),
+              path.join(__dirname, './layouts/**/*.vue'),
+              path.join(__dirname, './components/**/*.vue')
+            ]),
+            whitelist: ['html', 'body']
+          })
+        )
+      }
+    },
+    vendor: [
+      'axios',
+      'firebase',
+      'firebase-auth',
+      'vuexfire',
+      'tachyons'
+    ]
   }
 }
-

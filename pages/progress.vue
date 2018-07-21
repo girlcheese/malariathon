@@ -11,22 +11,19 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
 export default {
   layout: 'malariathon',
-  components: {
-    AppLogo
-  },
+  components: {},
   data () {
     return {
-      title: 'Home'
+      title: 'Progress'
     }
   },
   head () {
     return {
       title: this.title,
       meta: [
-        { hid: 'description', name: 'description', content: 'Your index page is here' }
+        { hid: 'description', name: 'description', content: 'How is our progress?' }
       ]
     }
   }
@@ -34,13 +31,5 @@ export default {
 </script>
 
 <style>
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
 
 </style>

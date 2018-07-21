@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  .container
     nav-toolbar
     nuxt
 </template>
@@ -10,6 +10,16 @@ export default {
   name: 'malariathon',
   components: {
     NavToolbar
+  },
+  data () {
+    return {
+      title: 'Home Page'
+    }
+  },
+  metaInfo () {
+    return {
+      title: this.title
+    }
   }
 }
 </script>
@@ -33,5 +43,13 @@ export default {
 
   body {
     background: indianred;
+  }
+
+  .container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 </style>

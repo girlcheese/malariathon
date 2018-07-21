@@ -7,11 +7,14 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'malariathon',
+    titleTemplate: (titleChunk) => {
+      // If undefined or blank then we don't need the hyphen
+      return titleChunk ? `${titleChunk} - Nando's Malariathon 2018` : 'Nando\'s Malariathon 2018'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Front end for the Nando&apos;s Malariathon 2018' }
+      { hid: 'description', name: 'description', content: 'Join us today in raising money to beat Malaria' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -63,5 +66,14 @@ module.exports = {
       'vuexfire',
       'tachyons'
     ]
-  }
+  },
+  /*
+  ** Routing
+  */
+  router: {
+    middleware: 'router-auth'
+  },
+  plugins: [
+    '~/plugins/fireauth.js'
+  ]
 }

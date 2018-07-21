@@ -4,13 +4,13 @@
     nav.f6.fw6.ttu.tracked
       ul.nav
         li
-          a(href="#").link.dim.white.dib.mr3 The Rules
+          a(href="/rules").link.dim.white.dib.mr3 The Rules
         li
-          a(href="#").link.dim.white.dib.mr3 Health and Wellness
+          a(href="/health").link.dim.white.dib.mr3 Health and Wellness
         li
-          a(href="#").link.dim.white.dib.mr3 Progress
+          a(href="/progress").link.dim.white.dib.mr3 Progress
         li
-          a(href="#").link.dim.white.dib.mr3 FAQs
+          a(href="/faqs").link.dim.white.dib.mr3 FAQs
 </template>
 
 <script>

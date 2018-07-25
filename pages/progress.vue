@@ -1,6 +1,9 @@
 <template lang="pug">
   section.w-100.pv3.f6.ph3.ph4-ns
     .mw9.center.ph3-ns
+      p(v-if="user") Hello, {{user.displayName}}
+      p(v-else) The user is not authenticated!
+    .mw9.center.ph3-ns
       .cf.ph2-ns
         .fl.w-100.w-third-ns.pa2
           .outline.bg-white.pv4

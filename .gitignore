@@ -1,8 +1,8 @@
+
 # Project dependencies
 .cache
 node_modules
 yarn-error.log
-.idea/
 
 # Build directory
 /public
@@ -10,3 +10,13 @@ yarn-error.log
 
 # Environment file
 .env*
+
+### Code ###
+# Visual Studio Code - https://code.visualstudio.com/
+.settings/
+.vscode/
+tsconfig.json
+jsconfig.json
+
+# Webstorm
+.idea/

@@ -10,7 +10,7 @@ With thanks to the Gatsby & Auth integration tutorial from [Unicorn Agency](http
 
 - adr-log - `npm install -g adr-log`
 
-### Running the application
+### Application setup
 
 Make sure you have the Gatsby CLI installed. You can do that by running
 `npm install --global gatsby-cli`

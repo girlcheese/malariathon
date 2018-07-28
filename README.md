@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Nando's Malariathon
 
 A simple integration using [gatsby-starter-default](https://github.com/gatsbyjs/gatsby-starter-default) and [Tachyons](https://github.com/tachyons-css/tachyons/) for CSS, with added Firebase auth
